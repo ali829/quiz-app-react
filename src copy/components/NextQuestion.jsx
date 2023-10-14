@@ -1,7 +1,6 @@
-import { useQuiz } from "../contexts/QuizContext";
+import { ACTION } from "../App";
 
-const NextQuestion = () => {
-  const { index, dispatch, answer, numQuestions, ACTION } = useQuiz();
+const NextQuestion = ({ dispatch, answer, index, numQuestions }) => {
   if (answer === null) return null;
   if (index < numQuestions - 1)
     return (

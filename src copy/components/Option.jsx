@@ -1,6 +1,5 @@
-import { useQuiz } from "../contexts/QuizContext";
+import { ACTION } from "../App";
 const Option = ({ option, dispatch, answer, index, correctOption }) => {
-  const { ACTION } = useQuiz();
   console.log(correctOption);
   const isAnswered = answer !== null;
   return (
